@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flame - Vision-Language Model for Front-end Code Generation</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <i class="fas fa-fire"></i>
+                <span>Flame</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#features">Features</a></li>
+                <li><a href="#installation">Installation</a></li>
+                <li><a href="#usage">Usage</a></li>
+                <li><a href="#documentation">Docs</a></li>
+                <li><a href="https://github.com/flame-project" class="github-link" target="_blank">
+                    <i class="fab fa-github"></i>
+                </a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <h1 class="hero-title">
+                    Transform UI Designs into 
+                    <span class="gradient-text">React Code</span>
+                </h1>
+                <p class="hero-description">
+                    Flame is an open-source large vision-language model designed for front-end code generation. 
+                    Bridge the gap between UI design mockups and executable React code with state-of-the-art multimodal learning.
+                </p>
+                <div class="hero-buttons">
+                    <a href="#installation" class="btn btn-primary">
+                        <i class="fas fa-rocket"></i>
+                        Get Started
+                    </a>
+                    <a href="#demo" class="btn btn-secondary">
+                        <i class="fas fa-play"></i>
+                        View Demo
+                    </a>
+                </div>
+                <div class="hero-stats">
+                    <div class="stat">
+                        <span class="stat-number">178k+</span>
+                        <span class="stat-label">Training Samples</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">3-Stage</span>
+                        <span class="stat-label">Training Pipeline</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">SOTA</span>
+                        <span class="stat-label">Performance</span>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="code-preview">
+                    <div class="code-header">
+                        <div class="code-dots">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                        <span class="code-title">Generated React Component</span>
+                    </div>
+                    <div class="code-content">
+                        <pre><code><span class="keyword">import</span> <span class="string">React</span> <span class="keyword">from</span> <span class="string">'react'</span>;
+
+<span class="keyword">const</span> <span class="function">Dashboard</span> = () => {
+  <span class="keyword">return</span> (
+    &lt;<span class="tag">div</span> <span class="attr">className</span>=<span class="string">"dashboard"</span>&gt;
+      &lt;<span class="tag">h1</span>&gt;Welcome to Flame&lt;/<span class="tag">h1</span>&gt;
+      &lt;<span class="tag">p</span>&gt;AI-powered code generation&lt;/<span class="tag">p</span>&gt;
+    &lt;/<span class="tag">div</span>&gt;
+  );
+};
+
+<span class="keyword">export default</span> Dashboard;</code></pre>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="features">
+        <div class="container">
+            <div class="section-header">
+                <h2>Powerful Features</h2>
+                <p>Everything you need for vision-to-code generation</p>
+            </div>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-eye"></i>
+                    </div>
+                    <h3>Vision-Language Understanding</h3>
+                    <p>Advanced multimodal learning that understands both visual designs and code structures for accurate translation.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <h3>React Code Generation</h3>
+                    <p>Generate production-ready React components with proper styling, state management, and best practices.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-database"></i>
+                    </div>
+                    <h3>Comprehensive Data Pipeline</h3>
+                    <p>Three distinct data synthesis methods: Evolution-Based, Waterfall-Model-Based, and Additive Development.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-cogs"></i>
+                    </div>
+                    <h3>End-to-End Training</h3>
+                    <p>Three-stage training strategy with vision encoder pretraining and full instruction-tuning.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3>Evaluation Pipeline</h3>
+                    <p>Flame-React-Eval benchmarking with automated testing for functional correctness and visual fidelity.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-images"></i>
+                    </div>
+                    <h3>Multi-Image Support</h3>
+                    <p>Process multiple design mockup versions for iterative UI refinement and code updates.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Demo Section -->
+    <section id="demo" class="demo">
+        <div class="container">
+            <div class="section-header">
+                <h2>See Flame in Action</h2>
+                <p>From design mockup to working React code</p>
+            </div>
+            <div class="demo-container">
+                <div class="demo-step">
+                    <div class="step-number">1</div>
+                    <div class="step-content">
+                        <h3>Upload Design</h3>
+                        <p>Provide your UI design mockup or wireframe</p>
+                        <div class="demo-image">
+                            <i class="fas fa-image"></i>
+                            <span>Design Mockup</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="demo-arrow">
+                    <i class="fas fa-arrow-right"></i>
+                </div>
+                <div class="demo-step">
+                    <div class="step-number">2</div>
+                    <div class="step-content">
+                        <h3>AI Processing</h3>
+                        <p>Flame analyzes the design and generates code</p>
+                        <div class="demo-processing">
+                            <div class="processing-bar">
+                                <div class="processing-fill"></div>
+                            </div>
+                            <span>Generating...</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="demo-arrow">
+                    <i class="fas fa-arrow-right"></i>
+                </div>
+                <div class="demo-step">
+                    <div class="step-number">3</div>
+                    <div class="step-content">
+                        <h3>React Code</h3>
+                        <p>Get production-ready React components</p>
+                        <div class="demo-code">
+                            <i class="fas fa-code"></i>
+                            <span>Component.jsx</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Installation Section -->
+    <section id="installation" class="installation">
+        <div class="container">
+            <div class="section-header">
+                <h2>Quick Installation</h2>
+                <p>Get up and running in minutes</p>
+            </div>
+            <div class="installation-steps">
+                <div class="install-step">
+                    <div class="step-header">
+                        <span class="step-num">1</span>
+                        <h3>Clone Repository</h3>
+                    </div>
+                    <div class="code-block">
+                        <code>git clone https://github.com/flame-project/flame.git</code>
+                        <button class="copy-btn" onclick="copyToClipboard(this)">
+                            <i class="fas fa-copy"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="install-step">
+                    <div class="step-header">
+                        <span class="step-num">2</span>
+                        <h3>Setup Environment</h3>
+                    </div>
+                    <div class="code-block">
+                        <code>conda env create -f environment.yml && conda activate flame</code>
+                        <button class="copy-btn" onclick="copyToClipboard(this)">
+                            <i class="fas fa-copy"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="install-step">
+                    <div class="step-header">
+                        <span class="step-num">3</span>
+                        <h3>Install Dependencies</h3>
+                    </div>
+                    <div class="code-block">
+                        <code>npm install</code>
+                        <button class="copy-btn" onclick="copyToClipboard(this)">
+                            <i class="fas fa-copy"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Usage Section -->
+    <section id="usage" class="usage">
+        <div class="container">
+            <div class="section-header">
+                <h2>Usage Examples</h2>
+                <p>Learn how to use Flame for your projects</p>
+            </div>
+            <div class="usage-tabs">
+                <div class="tab-buttons">
+                    <button class="tab-btn active" onclick="showTab('data-prep')">Data Preparation</button>
+                    <button class="tab-btn" onclick="showTab('training')">Training</button>
+                    <button class="tab-btn" onclick="showTab('evaluation')">Evaluation</button>
+                </div>
+                <div class="tab-content">
+                    <div id="data-prep" class="tab-pane active">
+                        <h3>Data Preparation Pipeline</h3>
+                        <p>Generate self-contained component code snippets from GitHub repositories:</p>
+                        <div class="code-block">
+                            <code>bash scripts/collect_gh_code_run.sh</code>
+                            <button class="copy-btn" onclick="copyToClipboard(this)">
+                                <i class="fas fa-copy"></i>
+                            </button>
+                        </div>
+                        <p>Render code snippets to images:</p>
+                        <div class="code-block">
+                            <code>bash scripts/renderer_run.sh</code>
+                            <button class="copy-btn" onclick="copyToClipboard(this)">
+                                <i class="fas fa-copy"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div id="training" class="tab-pane">
+                        <h3>Model Training</h3>
+                        <p>Train the Flame model with your prepared dataset:</p>
+                        <div class="code-block">
+                            <code>python model/scripts/train/pretrain_STAGE2.sh</code>
+                            <button class="copy-btn" onclick="copyToClipboard(this)">
+                                <i class="fas fa-copy"></i>
+                            </button>
+                        </div>
+                        <p>The training process includes three stages: vision encoder pretraining, layout interpretation, and instruction-tuning.</p>
+                    </div>
+                    <div id="evaluation" class="tab-pane">
+                        <h3>Model Evaluation</h3>
+                        <p>Evaluate your trained model on the Flame-React-Eval benchmark:</p>
+                        <div class="code-block">
+                            <code>python evaluator/eval/index.py --eval_only --model_path /path/to/model</code>
+                            <button class="copy-btn" onclick="copyToClipboard(this)">
+                                <i class="fas fa-copy"></i>
+                            </button>
+                        </div>
+                        <p>This will run automated testing for both functional correctness and visual fidelity.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Documentation Section -->
+    <section id="documentation" class="documentation">
+        <div class="container">
+            <div class="section-header">
+                <h2>Documentation</h2>
+                <p>Comprehensive guides and API references</p>
+            </div>
+            <div class="docs-grid">
+                <a href="#" class="doc-card">
+                    <div class="doc-icon">
+                        <i class="fas fa-book"></i>
+                    </div>
+                    <h3>Getting Started</h3>
+                    <p>Complete guide to setting up and using Flame</p>
+                    <span class="doc-arrow">→</span>
+                </a>
+                <a href="#" class="doc-card">
+                    <div class="doc-icon">
+                        <i class="fas fa-cog"></i>
+                    </div>
+                    <h3>API Reference</h3>
+                    <p>Detailed documentation of all APIs and functions</p>
+                    <span class="doc-arrow">→</span>
+                </a>
+                <a href="#" class="doc-card">
+                    <div class="doc-icon">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <h3>Tutorials</h3>
+                    <p>Step-by-step tutorials and examples</p>
+                    <span class="doc-arrow">→</span>
+                </a>
+                <a href="#" class="doc-card">
+                    <div class="doc-icon">
+                        <i class="fas fa-question-circle"></i>
+                    </div>
+                    <h3>FAQ</h3>
+                    <p>Frequently asked questions and troubleshooting</p>
+                    <span class="doc-arrow">→</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <i class="fas fa-fire"></i>
+                        <span>Flame</span>
+                    </div>
+                    <p>Open-source vision-language model for front-end code generation</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-github"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-discord"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Resources</h4>
+                    <ul>
+                        <li><a href="#documentation">Documentation</a></li>
+                        <li><a href="#installation">Installation</a></li>
+                        <li><a href="#usage">Usage Guide</a></li>
+                        <li><a href="#">Examples</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Community</h4>
+                    <ul>
+                        <li><a href="#">GitHub Issues</a></li>
+                        <li><a href="#">Discussions</a></li>
+                        <li><a href="#">Contributing</a></li>
+                        <li><a href="#">Code of Conduct</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Support</h4>
+                    <ul>
+                        <li><a href="#">Help Center</a></li>
+                        <li><a href="#">Contact</a></li>
+                        <li><a href="#">Bug Reports</a></li>
+                        <li><a href="#">Feature Requests</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Flame Project. Licensed under Apache 2.0 License.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
